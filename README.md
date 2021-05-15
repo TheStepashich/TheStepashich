@@ -1,0 +1,3 @@
+- 👋 Hi, I’m @TheStepashich
+- 🌱 I’m currently learning JS, TS, mc_datapacks
+- 📫 Telegram: **@TheStepashich**, Discord: **TheStepashich | Bork#6359**
