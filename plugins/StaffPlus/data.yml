@@ -5,5 +5,10 @@
   glass-color: WHITE_STAINED_GLASS_PANE
   alert-options: []
   vanish-type: NONE
-  staff-mode: true
-  staff-mode-name: default
+  staff-mode: false
+1bdf6237-d697-34e8-93ed-b103557e4777:
+  name: TheStepashich
+  glass-color: WHITE_STAINED_GLASS_PANE
+  alert-options: []
+  vanish-type: NONE
+  staff-mode: false

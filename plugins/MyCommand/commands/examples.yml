@@ -53,12 +53,6 @@ tab_completer:
   - Hello!
   - Well Met!
   command_description: "Greets people with a Broadcast"
-shortcut:
-  command: /l
-  type: RUN_COMMAND
-  runcmd:
-  - '/list'
-  cost: 0
 mycmd_colors:
   command: /mycmd-colors
   type: TEXT
@@ -462,3 +456,11 @@ anvil_gui:
  - $text$ $player, you typed $output
  - /broadcast $output
  - '%openiconmenu%/iconmenu $output'
+
+b:
+  command: /b
+  type: TEXT
+  text:
+  - '(( &e$player&r $multiargs ))'
+  required_args: 1
+  register: true

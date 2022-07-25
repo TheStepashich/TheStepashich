@@ -1,0 +1,71 @@
+
+# Custom system placeholders
+placeholders:
+  rpchat_prefix:
+
+    # Origin text will be placed
+    text: "%vault_prefix%"
+
+    # Custom groups (Not related with rank names)
+    player:
+      # System rank weight
+      weight: 10
+      # Permission to access this rank
+      permission: none
+    owner:
+      weight: 100
+      permission: "rpchat.owner"
+      hover:
+        - "&c&lWOW! IT IS AN OWNER!!!"
+    ranked:
+      weight: 50
+      permission: "rpchar.ranked"
+      # Message will be displayed on hover (Also supports custom and PAPI placeholders)
+      hover:
+        - "&5&lWow! So cool prefix!"
+        - "&aWant the same? Buy rank"
+        - "&aat our store &6spigotmc.org&a!"
+        - ""
+        - "&c&lCLICK TO JOIN"
+      # Click action
+      click:
+        # Action type (OPEN_URL, RUN_COMMAND, SUGGEST_COMMAND)
+        type: "OPEN_URL"
+        # Context
+        value: "https://spigotmc.org"
+
+  # Another placeholder
+  rpchat_suffix:
+    text: "%vault_suffix%"
+    player:
+      weight: 10
+      permission: none
+    owner:
+      weight: 100
+      permission: "rpchat.owner"
+      hover:
+        - "&c&lWOW! IT IS AN OWNER!!!"
+    ranked:
+      weight: 50
+      permission: "rpchar.ranked"
+      hover:
+        - "&5&lWow! So cool suffix!"
+        - "&aWant the same? Buy case"
+        - "&ain our in-game shop &6/market"
+        - ""
+        - "&c&lCLICK TO JOIN"
+      click:
+        type: "RUN_COMMAND"
+        value: "/market"
+
+  rpchat_name:
+    text: "%player%" # %player% will be replaced with player name
+    player:
+      weight: 10
+      permission: none
+      hover:
+        - "&cClick &ato send private"
+        - "&amessage for &e%player%&a!"
+      click:
+        type: "SUGGEST_COMMAND"
+        value: "/msg %player% "

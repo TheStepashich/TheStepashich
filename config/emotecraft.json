@@ -3,7 +3,7 @@
   "loadbuiltin": true,
   "quark": false,
   "debug": true,
-  "validate": false,
+  "validate": true
   "validationThreshold": 8.0,
   "loadEmotesServerSide": true,
   "emotesDirectory": "emotes"

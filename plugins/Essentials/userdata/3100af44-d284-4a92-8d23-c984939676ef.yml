@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1658742846503
+  login: 1658742805085
+money: '0'
+last-account-name: TheStepashich
+logoutlocation:
+  world: 2a3bfca7-f85a-48d1-aeab-f9af5c78b1c2
+  world-name: world
+  x: -117.11330183064737
+  y: 77.74807919754245
+  z: 75.9339624382154
+  yaw: 103.05160522460938
+  pitch: 9.599881172180176

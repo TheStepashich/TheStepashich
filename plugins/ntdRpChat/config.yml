@@ -1,0 +1,116 @@
+#
+#
+#███████████████████████████████████████████████████████████████████████████████████████████████
+#█░░░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█
+#█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█
+#█░░▄▀░░░░░░░░▄▀░░███░░▄▀░░░░░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░▄▀░░█░░░░░░▄▀░░░░░░█
+#█░░▄▀░░████░░▄▀░░███░░▄▀░░██░░▄▀░░█░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░██░░▄▀░░█████░░▄▀░░█████
+#█░░▄▀░░░░░░░░▄▀░░███░░▄▀░░░░░░▄▀░░█░░▄▀░░█████████░░▄▀░░░░░░▄▀░░█░░▄▀░░░░░░▄▀░░█████░░▄▀░░█████
+#█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░█████████░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█████░░▄▀░░█████
+#█░░▄▀░░░░░░▄▀░░░░███░░▄▀░░░░░░░░░░█░░▄▀░░█████████░░▄▀░░░░░░▄▀░░█░░▄▀░░░░░░▄▀░░█████░░▄▀░░█████
+#█░░▄▀░░██░░▄▀░░█████░░▄▀░░█████████░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░██░░▄▀░░█████░░▄▀░░█████
+#█░░▄▀░░██░░▄▀░░░░░░█░░▄▀░░█████████░░▄▀░░░░░░░░░░█░░▄▀░░██░░▄▀░░█░░▄▀░░██░░▄▀░░█████░░▄▀░░█████
+#█░░▄▀░░██░░▄▀▄▀▄▀░░█░░▄▀░░█████████░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀░░█░░▄▀░░██░░▄▀░░█████░░▄▀░░█████
+#█░░░░░░██░░░░░░░░░░█░░░░░░█████████░░░░░░░░░░░░░░█░░░░░░██░░░░░░█░░░░░░██░░░░░░█████░░░░░░█████
+#███████████████████████████████████████████████████████████████████████████████████████████████
+#                                                    MADE WITH LOVE BY DENBEKKER (RUSSIAN CODER)
+#
+#         Join my DISCORD server for support & bug reporting & feature requesting
+#                             https://discord.gg/vbYW3sperj
+#
+#                 SpigotMC - https://www.spigotmc.org/resources/94516/
+#
+#
+
+no-permission: "&cSorry, but you do not have permission for &e%cmd%"
+muted: "&cYou cannot chat, because you are muted for: &e%reason%"
+no-reason: "No reason"
+rp-formats:
+  roll: "&c* &7%player% &fвыбил число: &c%number%"
+  try-no-arg: "&c* &7%player%&f %message% &7(%salt%&7)"
+  try-arg: "&c* &7%player% &7%salt% &f%message%"
+  success: "&aУспешно!"
+  failed: "&cБезуспешно"
+  try-arguments: # /try -c test -> "* Player test (Success)"
+  - "-c"
+  do: "*%player% %message%" # Do purple player, uppercase message and adds dot
+  me: "&c* &7%player% &f%message%" # Me removes dot after message
+  player: "%rpchat_name%"
+  
+  usage: "&cTo few arguments. Use &e/%label% [message]"
+
+direct-messages:
+  you: "Вы"
+  usage: "&cUse &e/%label% [name/leave] [message]"
+  not-found: "&cPlayer &e%player% &cnot found"
+  already-in-conversation: "&cPlayer &e%player% &calready in conversation"
+  requested: "&cPlayer &e%player% &cwant to talk with you using direct messaged! Leave current conversation to talk with"
+  latest-not-by-you: "&cLatest message in conversation sent not by you"
+  deleted-latest-message: "&cLatest message in conversation have been deleted"
+
+sounds:
+  head-chat:
+    enabled: true
+    # entity.egg.throw is a craft clientside sound from 1.12 version
+    sound: "entity.egg.throw"
+    volume: 1
+    pitch: 1
+
+options:
+
+  # Disable local chat (Chat will be only global). For lobby, etc.
+  only-global: false
+  # Local chat range. If distance between players lower than this value they wont see messages
+  local-range: 50
+  # Role play commands range
+  rp-range: 20
+
+  # System options, not change if you do not what it does
+  updates: 30    # Above head chat will be updated 30 times (30 * 3 = 90 ticks (4,5 sec))
+  update-tick: 3 # Each 3 ticks above head chat will be moved
+  # System options, not change if you do not what it does
+
+  # Global chat identifier
+  global-chat-identifier: "!"
+  # Head chat prefix (Supports PAPI)
+  head-prefix: "&eСказал: &f"
+  # Message limit in head chat (Will be cropped if +- 4 chars)
+  head-chat-crop: 15
+  # Head chat offset Y from player head
+  head-chat-offset-Y: 0.3
+  # Head chat will float from offset-Y * head-chat animation at start
+  # 2 means that chat will fly from 0.6 to 0.3 (Down)
+  head-chat-animation: 2
+  
+  # Not recomended. Message lags behind player
+  self-head-chat: false
+  
+  # When one placeholder returns other placeholder (If your prefix contains placeholder for example)
+  sub-placeholder-rounds: 2
+
+  # Insert a dot after message
+  auto-dot: true
+  # Make first letter big in message
+  auto-big-first-letter: true
+
+  format-event: true
+  format-event-global: true
+
+features:
+  # Scoreboard direct messages
+  direct-messages: true
+  # Above head chat
+  head-chat: true
+  # Role play commands
+  commands: true
+  # Chat features
+  chat: true
+
+chat-formats:
+
+  # Local chat in configured range format
+  local: "&7[&bⓁ&7] %rpchat_name%&7 →&f %message%"
+  # Local chat format for staff memebers (Staff member with permission can see all local messages)
+  alocal: "&7[&3Ⓢ&7]%rpchat_name%&7 →&3 %message%"
+  # Global chat format
+  global: "&7[&6Ⓖ&7] %rpchat_name%&7 →&f %message%"
