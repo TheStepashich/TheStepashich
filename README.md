@@ -37,7 +37,7 @@
 *   [🌐 pVPN](https://potatom.net/projects/06-pvpn/) - Своя Proxy/VPN инфраструктура. Быстрый и безопасный доступ в интернет из любого места. 
 *   [💊 Matrix сервер](https://potatom.net/projects/01-matrix/) - Федеративный мессенджер и коммуникации для команды и друзей. 
 *   [☎️ JITSI](https://potatom.net/projects/03-jitsi/) - Свой сервер видеоконференций. Без внешних провайдеров. 
-*   [😜 MemeArchive](https://potatom.net/projects/08-memearchive/) - позволяет искать мемы по описанию через векторный поиск. 
+*   [😜 MemeArchive](https://memearchive.potatom.net/) - позволяет искать мемы по описанию через векторный поиск. 
 *   [📻 Радио Молот](https://radiomolot.ru) - на основе AzuraCast.Поддерживаю и участвую в радиоэфирах.
 
 #### Прочие статьи и проекты
